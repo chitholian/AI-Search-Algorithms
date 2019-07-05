@@ -26,7 +26,7 @@ class Graph:
         except KeyError: neighbors = {}
         neighbors[node2] = cost
         self.edges[node1] = neighbors
-        if not self.directed and not __reversed: self.add_edge(node2, node1, True)
+        if not self.directed and not __reversed: self.add_edge(node2, node1, cost, True)
 
     def set_huristics(self, huristics={}):
         self.huristics = huristics
